@@ -5,6 +5,13 @@
 // TA: Yeping Wang
 // Lecturer: Florian Heimerl
 // Notes to Grader: <optional extra notes>
+
+/**
+ * Song object to be used to store various information about the song.
+ * <p>
+ * @author Isaac Colbert
+ *
+ */
 public class Song implements Comparable<Song> {
   private String songTitle;
   private String artist;
