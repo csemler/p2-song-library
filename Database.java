@@ -127,6 +127,20 @@ public class Database {
   }
   
   /**
+   * Calculates the frequency of the specified genre in the song database.
+   * <p>
+   * @param genre - the genre whose frequency is to be calculated.
+   * @return the frequency of the specified genre in the song database.
+   */
+  public double getFrequencyByGenre(String genre) {
+    if (size() == 0) {
+      return 0;
+    }
+    return songLibrary.count((node) -> node.data.getGenre().equalsIgnoreCase(genre) ? 1 : 0) 
+        / (double) size();
+  }
+  
+  /**
    * Imports songs from SongInformation.txt into the song database.
    */
   private void importSongs() {
