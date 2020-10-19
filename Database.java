@@ -114,7 +114,7 @@ public class Database {
    * Clears the database of all songs.
    */
   public void clearDatabase() {
-    this.songLibrary = new RedBlackTree<Song>();
+    this.songLibrary = new RBTAddition<Song>();
   }
   
   /**
