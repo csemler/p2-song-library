@@ -17,13 +17,13 @@ import java.util.NoSuchElementException;
  *
  */
 public class Database {
-  private RedBlackTree<Song> songLibrary;
+  private RBTAddition<Song> songLibrary;
   
   /**
    * Constructor for an instance of database.
    */
   public Database() {
-    this.songLibrary = new RedBlackTree<Song>();
+    this.songLibrary = new RBTAddition<Song>();
     this.importSongs();
   }
   
